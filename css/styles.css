@@ -810,7 +810,7 @@ transition:border-color var(--transition-dur-time-func)
 }
 .modal-chekbox:checked + .chekbox-label:before {
 display: block;
-background-color: #404BBF;
+background-color: var(--color-pressed-state);
 border: 0;
 background-image: url(../images/chekbox.svg);
 background-repeat: no-repeat;
@@ -821,5 +821,12 @@ background-position: 50% 50%;
 .modal-chekbox:focus+.chekbox-label:before {
 border-color: var(--color-bord-input);
 }
-
+.privacy-policy-link{
+color:var(--color-logo-links);
+transition: color var(--transition-dur-time-func);
+}
+.privacy-policy-link:hover,
+.privacy-policy-link:focus {
+color: var(--color-pressed-state);
+}
 /* ======================= FORM MODAL =============================== */
