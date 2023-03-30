@@ -813,10 +813,10 @@ transition:border-color var(--transition-dur-time-func)
 .modal-chekbox:checked + .chekbox-label:before {
 display: block;
 background-color: var(--color-pressed-state);
-border: 0;
+border: none;
 background-image: url(../images/chekbox.svg);
 background-repeat: no-repeat;
-background-position: 50% 50%;
+background-position: center;
 }
 
 .modal-chekbox:hover+.chekbox-label:before,
