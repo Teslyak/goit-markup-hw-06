@@ -765,6 +765,7 @@ transition: background-color var(--transition-dur-time-func);
  .btn-send:focus{
 background-color: var(--color-pressed-state);
 outline: none;
+
 }
 .btn-send-wraper{
  display: flex;
@@ -784,6 +785,41 @@ outline: none;
 .modal-input:hover + .icon-modal-input,
 .modal-input:focus + .icon-modal-input {
 fill:var(--color-bord-input);    
+}
+.chekbox-label {
+font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.04em;
+display: flex;
+align-items: center;
+margin-bottom: 24px;
+}
+
+.chekbox-label:before {
+content: '';
+display: block;
+width: 16px;
+height: 16px;
+border: 1px solid rgba(46, 47, 66, 0.4);
+border-radius: 2px;
+cursor: pointer;
+margin-right: 8px;
+transition:border-color var(--transition-dur-time-func)
+
+
+}
+.modal-chekbox:checked + .chekbox-label:before {
+display: block;
+background-color: #404BBF;
+border: 0;
+background-image: url(../images/chekbox.svg);
+background-repeat: no-repeat;
+background-position: 50% 50%;
+}
+
+.modal-chekbox:hover+.chekbox-label:before,
+.modal-chekbox:focus+.chekbox-label:before {
+border-color: var(--color-bord-input);
 }
 
 /* ======================= FORM MODAL =============================== */
